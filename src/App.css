@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Formulario{
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  border-radius: 10px;
+  background-color: white;
+  width: 200px;
+  height: 230px;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  gap: 5px;
+}
+
+.Formulario input{
+  color: black;
+  border: 1px black solid;
+  padding: 5px;
+}
+
+.Formulario h3{
+  margin: 5px;
+  padding: 3px;
+}
+
+.Formulario div{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  gap: 15px;
+  
+}
+
+.DivFormularios{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+.DivBotones{
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+button{
+  background-color: white;
+  padding: 5px 10px ;
+  border: 1px black solid;
+  border-radius: 3px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+button:hover{
+  background-color: rgb(22, 22, 22);
+  color: white;
+  transition: 0.3s;
+}
+
+.DivUsuarios{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px;
+  gap: 10px;
+  place-content: center;
+}
+
+.TarjetaUsuario{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  border: 1px black solid;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+}

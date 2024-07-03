@@ -1,16 +1,16 @@
 import { Component } from 'react';
 
-export default class FormularioLogin extends Component{
+export default class FormularioSesion extends Component{
     constructor(props){
         super(props)
         this.state={ 
-            usuario:"",
-            contrasena:"",
+            user:"",
+            pass:"",
         }      
     }
 
     render(){
-        const {usuario, contrasena}=this.state
+        const {user, pass}=this.state
         return(
             <div className='Formulario'>
 
@@ -19,18 +19,18 @@ export default class FormularioLogin extends Component{
                 <div>
                     <input type="text" 
                         placeholder='Usuario'
-                        value={usuario}
-                        onChange={(e)=>this.setState({usuario:e.target.value})}
+                        value={user}
+                        onChange={(e)=>this.setState({user:e.target.value})}
                     />
                 
                     <input type="password"
                         placeholder='Contraseña'
-                        value={contrasena}
-                        onChange={(e)=>this.setState({contrasena:e.target.value})}
+                        value={pass}
+                        onChange={(e)=>this.setState({pass:e.target.value})}
                     />
                 </div>
             
-                <button onClick={()=>this.props.ingresar(usuario, contrasena)}>
+                <button onClick={()=>this.props.ingresar(user, pass)}>
                     login
                 </button>
             </div>
